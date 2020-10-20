@@ -12,4 +12,4 @@ It was created from the Product landing page challenge of freeCodeCamp, made wit
 
 You can take a look [here](https://guacig.github.io/landing-page-travel/)
 
-Feedback issues etc. are more than welcome! Thanks a lot!
+Feedback issues etc. are more than welcome! Thanks!
