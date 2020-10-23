@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Landing Page Travel Agency</title>
+	<link rel="stylesheet" href="styles.css">
+	<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no"/>
+	<link href="https://fonts.googleapis.com/css?family=Lexend+Mega|Pacifico|Patua+One|Varela+Round&display=swap" rel="stylesheet">
+	<script src="script.js"></script>
+</head>
+
+<body onload="showSlides()">
+	<!-------------------------------------------------HEADER---------------------------------------------------------->
+	<header id="header">       
+		<div class="header-top">   <!-----------------------------HEADER TOP - LOGO + USER ------------>
+			<div id="top-wrapper">
+				<div class="top-identity">
+					<a href="#home"><img id="header-img" src="https://res.cloudinary.com/drpcjt13x/image/upload/v1601903526/Proyectos/Product%20Landing%20Page/travel-logo_femnrp.png" alt="logo"></a>
+					<div class="log-wrapper">
+						<button class="register" onclick="document.getElementById('id02').style.display='block'">Register</button>
+						<button class="login" onclick="document.getElementById('id01').style.display='block'">Log in</button>
+						<button class="login" id="log01" onclick="document.getElementById('id01').style.display='block'"><i class="fas fa-user-circle"></i></button>
+					</div>
+				</div>
+		    </div>	
+		</div>
+		<div class="header-bottom">  <!--------------------------HEADER BOTTOM - NAVEGATION -------------->
+			<span class="openbtn" onclick="openNav()">&#9776; </span>
+			<nav id="myNav" class="overlay">	
+				<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+				<div class="overlay-content">
+					<a href="#home">Home</a>
+					<a href="#features-travel">Features</a>
+					<a href="#recommendations">Recommendations</a>
+					<a href="#new-routes">New destinations</a>
+					<a href="#top-destines">Top destines</a>
+					<a href="#">Villas</a>
+					<a href="#">Theatre</a>
+					<a href="#">Spa</a>
+					<a href="#">Experiences</a>
+					<a href="#social">Newsletter</a>
+					<a href="#index">More</a>
+				</div>
+			</nav>
+		</div>
+		<!--------------------------------------- MODAL SIGN-IN USER/REGISTER ACCOUNT ----------------------->
+		<div id="id02" class="signModal">
+			<span onclick="document.getElementById('id02').style.display='none'" class="signclose" title="Close Modal">&times;</span>
+
+			<!-- Modal Content -->
+			<form class="sign-modal-content">
+			  <div class="sign-container">
+				<h1>Register</h1>
+				<p>Please fill in this form to create an account.</p>
+				<hr>
+				<label for="email"><b>Email</b></label>
+				<input type="text" placeholder="Enter Email" name="email" required>
+		  
+				<label for="signpsw"><b>Password</b></label>
+				<input type="password" placeholder="Enter Password" name="signpsw" required>
+		  
+				<label for="psw-repeat"><b>Repeat Password</b></label>
+				<input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+				
+				<label>
+				  <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+				</label>
+		  
+				<p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+		  
+				<div class="clearfix">
+				  <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
+				  <button type="submit" class="signupbtn">Sign Up</button>
+				</div>
+			  </div>
+			</form>
+		  </div>
+		
+		<!--------------------------------------- MODAL LOG-IN USER/ACCOUNT ------------------------------------->
+		<div id="id01" class="modal">
+			<span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+		
+			<!-- Modal Content -->
+			<form class="modal-content animate">
+				<div class="container-modal">
+					<label for="uname"><b>Username</b></label>
+					<input type="text" placeholder="Enter Username" name="uname" required>
+			
+					<label for="psw"><b>Password</b></label>
+					<input type="password" placeholder="Enter Password" name="psw" required>
+			
+					<button type="submit">Login</button>
+
+					<label>
+					<input type="checkbox" checked="checked" name="remember"> Remember me
+					</label>
+				</div>
+			
+				<div class="container-modal" style="background-color:#f1f1f1">
+					<button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+					<span class="psw">Forgot <a href="#">password?</a></span>
+				</div>
+
+			</form>
+		</div>	
+	</header>
+	<!-------------------------------------------------  MAIN   ------------------------------------------------------>
+	<main id="home">
+
+		<div class="hero-wrapper">   <!-------------- CONTAINER FOR HERO-IMAGE + FLIGHTS SEARCHER ---------------->
+			<div id="hero-img">      <!-------------- CONTAINER FOR HERO-IMAGE ---------------->
+
+				<div class="container-searcher">    <!------------ CONTAINER FOR FLIGHTS SEARCHER -------------->
+					<div class="navigation-primary">   <!------------ TAPS FOR SEARCHER -------------->
+						<div class="tab">
+							<a href="#flights" class="active" title="flights"><i class="fas fa-plane" style="font-size: 13px;"></i>&nbsp; Flights</a>
+							<a href="#hotels" title="hotels"><i class="fas fa-bed" style="font-size: 13px;"></i>&nbsp; Hotels</a>
+							<a href="#cars" title="cars"><i class="fas fa-car" style="font-size: 14px;"></i>&nbsp; Cars</a>
+						</div>	
+					</div>		
+					<div class="searcher-wrapper">   <!------------ SEARCHER -------------->
+						<form class="search-flight" action="">
+							<div class="radio-one-way">
+								<input id="one-way" type="radio" class="one-way-radio" value="one way" name="travel" onclick="oneWay()">
+								<label for="one-way" class="one-way-label">One way</label>
+								<input id="return-way" type="radio" class="return-way-radio" value="return way" name="travel" onclick="returnWay()">
+								<label for="return-way" class="return-label">Return</label>
+							</div>
+							<div class="route-search">
+								<div class="route-wrapper">
+									<div id="origin-wrapper" class="outer-input">
+										<label for="origin" class="origin-label">From:</label>
+										<input id="origin"  class="origin-input" type="text" name="origin" placeholder="London">	
+									</div>
+									<div class="route-divider"></div>
+									<div id="destination-wrapper" class="outer-input">
+										<label for="destination" class="destination-label">To:</label>
+										<input id="destination" class="destination-input" type="text" name="destination" placeholder="Paris">
+									</div>
+								</div>
+							</div>
+							<div class="date-search">
+								<div class="date-wrapper">
+									<div class="outbound-date-search">
+										<label for="route-picker-departing" class="departing-label"><i class="fas fa-plane-departure" style="color: #333;"></i></label>
+										<input type="date" name="picker-departing" class="departing-input" id="route-picker-departing">		
+									</div>
+									<div id="divider" class="route-divider"></div>
+									<div id="return-date" class="return-date-search">
+										<label for="route-picker-returning" class="returning-label"><i class="fas fa-plane-arrival" style="color: #333;"></i></label>
+										<input type="date" name="picker-returning" class="returning-input" id="route-picker-returning">	
+									</div>
+								</div>	
+							</div>
+							<div class="passenger-search">
+								<div class="adults-wrapper">
+									<label class="passenger-type" for="Adults">Adults (+16)</label>
+									<div class="passenger-selector">
+										<button class="button-remove" type="button" onclick="removeAdult()" ><i class="fas fa-minus"></i></button>
+										<input type="text" value="0" class="quantity" id="adults">
+										<button class="button-add" type="button" onclick="addAdult();"><i class="fas fa-plus"></i></button>
+									</div>
+								</div>
+								<div class="children-wrapper">
+									<label class="passenger-type" for="Children">Children (2-15)</label>
+									<div class="passenger-selector">
+										<button class="button-remove" type="button" onclick="removeChildren()"><i class="fas fa-minus"></i></button>
+										<input type="text" value="0" class="quantity" id="children">
+										<button class="button-add" type="button" onclick="addChildren()"><i class="fas fa-plus"></i></button>
+									</div>
+								</div>
+								<div class="infants-wrapper">
+									<label class="passenger-type" for="Infants">Infants (0-2)</label>
+									<div class="passenger-selector">
+										<button class="button-remove" type="button" onclick="removeInfant()"><i class="fas fa-minus"></i></button>
+										<input type="text" value="0" class="quantity" id="infant">
+										<button class="button-add" type="button" onclick="addInfant()"><i class="fas fa-plus"></i></button>
+									</div>
+								</div>
+							</div>
+							<button class="search">
+								Show me!
+							</button>
+						</form>	
+					</div>
+				</div>
+
+			</div>	
+		</div>
+
+		<!----------------------------------------------- BUTTON SCROLL TO TOP ------------------------------------------>
+		<button onclick="topFunction()" id="myBtnScr" title="Go to top">&uarr;</button>
+
+		<!---------------------------------------------  FEATURES SECTION    --------------------------------------->		
+		<section id="features-travel">
+			<div class="travel-wrapper">
+				<h2>Travel with confidence</h2>
+
+				<div class="row-container">
+
+					<!------ SMALL BOX CONTAINER---------->
+					<div class="row-box">  
+						<img src="https://res.cloudinary.com/drpcjt13x/image/upload/v1601989556/Proyectos/Product%20Landing%20Page/organized_zgxidj.jpg" alt="travel organized">
+						<div class="text">
+							<div class="heading">
+								<h4>Organize your trips easily</h4>
+							</div>
+							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam doloremque optio porro aperiam est dolores.
+							</p>
+						</div>
+					</div>
+
+					<!------ SMALL BOX CONTAINER---------->
+					<div class="row-box">  
+						<img src="https://res.cloudinary.com/drpcjt13x/image/upload/v1601989556/Proyectos/Product%20Landing%20Page/woman_casgc7.jpg" alt="morning woman">
+						<div class="text">
+							<div class="heading">
+								<h4>Attention, comfort and services</h4>
+							</div>
+							<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo excepturi, corporis deserunt architecto debitis.</p>
+						</div>
+					</div>
+
+					<!------ SMALL BOX CONTAINER---------->
+					<div class="row-box">
+						<img src="https://res.cloudinary.com/drpcjt13x/image/upload/v1601989556/Proyectos/Product%20Landing%20Page/travel-couple_ra8x1o.jpg" alt="couple travelling">
+						<div class="text">
+							<div class="heading">
+								<h4>For all types of tourists</h4>
+							</div>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem, laboriosam est! Non!</p>
+						</div>
+					</div>
+				</div>
+
+			</div>	
+		</section>		
+
+		<!---------------------------------------------  RECOMMENDATION SECTION    --------------------------------------->		
+		<section id="recommendations">
+			<div class="recommendation-wrapper">
+				<h2>Take a look at our products</h2>
+
+				<div class="boxes-recommendation-row">
+
+					<!------ SMALL BOX CONTAINER---------->
+					<div class="box">
+						<img class="travel-image" src="https://res.cloudinary.com/drpcjt13x/image/upload/v1575463543/Proyectos/Product%20Landing%20Page/Caribean_beach_ohkgcs.jpg" alt="Caribean beach">
+						<div class="offer">
+							<h4 class="travel-heading">Caribean Beaches</h4>
+							<p class="travel-price">from £200.00 p/p</p>
+						</div>	
+						<button class="btn">More info</button>	
+					</div>
+
+					<!------ SMALL BOX CONTAINER---------->
+					<div class="box">
+						<img class="travel-image" src="https://res.cloudinary.com/drpcjt13x/image/upload/v1575463309/Proyectos/Product%20Landing%20Page/Dubai-boat_dy52cv.jpg" alt="Dubai City">
+						<div class="offer">
+							<h4 class="travel-heading">Amazing Cities</h4>
+							<p class="travel-price">from £200.00 p/p</p>
+						</div>	
+						<button class="btn">More info</button>
+					</div>
+
+					<!------ SMALL BOX CONTAINER---------->
+					<div class="box">
+						<img class="travel-image" src="https://res.cloudinary.com/drpcjt13x/image/upload/v1575463541/Proyectos/Product%20Landing%20Page/alpes_girl_nfii1w.jpg" alt="girl at the lake">	
+						<div class="offer">
+							<h4 class="travel-heading">Misterious Mountains</h4>
+							<p class="travel-price">from £200.00 p/p</p>
+						</div>
+						<button class="btn">More info</button>
+					</div>
+
+					<!------ SMALL BOX CONTAINER---------->
+					<div class="box">
+						<img class="travel-image" src="https://res.cloudinary.com/drpcjt13x/image/upload/v1601994046/Proyectos/Product%20Landing%20Page/nepal_tsh3ij.jpg" alt="temple">	
+						<div class="offer">
+							<h4 class="travel-heading">Cultural travels</h4>
+							<p class="travel-price">from £200.00 p/p</p>
+						</div>
+						<button class="btn">More info</button>
+					</div>
+				</div>
+
+			</div>	
+		</section>
+
+		<!---------------------------------------------  NEW ROUTES SECTION    --------------------------------------->			
+		<section id="new-routes">
+			<div class="routes-wrapper">
+				<h2>Take a look at our new routes</h2>
+
+				<div class="routes-row">
+					<!------ BOX CONTAINER---------->
+					<div class="routes-box">	
+						<h4 class="routes-heading">Meet new countries</h4>
+						<p class="routes-text">Get to know our new destinations around the world where you can enjoy offers and surprising new routes.</p>
+						<button class="btn-information">Information &#10095;</button>	
+					</div>
+				</div>
+
+			</div>	
+		</section>
+
+		<!--------------------------------------------- TOP DESTINES SECTION    --------------------------------------->				
+		<section id="top-destines">
+			<div class="destines-wrapper">
+				<h2>Top destines</h2>
+
+				<div class="destines-row">
+
+					<!------ BOX CONTAINER---------->
+					<div class="card Picture">
+						<img src="https://res.cloudinary.com/drpcjt13x/image/upload/v1602000626/Proyectos/Product%20Landing%20Page/london1_whlodi.jpg" alt="London">
+						<div class="breaks">
+							<h4>Hotel deals in the UK</h4>
+							<p>Visit a bustling city or relax in the countryside. Find hotel deals in town within the next 7 days</p>
+						</div>
+						<a href="#london">Find hotel deals &#10095;</a>
+					</div>
+
+					<!------ BOX CONTAINER---------->
+					<div class="card Picture">
+						<img src="https://res.cloudinary.com/drpcjt13x/image/upload/v1602000627/Proyectos/Product%20Landing%20Page/Barcelona1_vfq3fz.jpg" alt="Barcelona">
+						<div class="breaks">
+							<h4>City breaks this Autumn</h4>
+							<p>From Lisbon and Krakow, to Prague and Barcelona, explore the best deals for you</p>
+						</div>
+						<a href="#barcelona">Learn more &#10095;</a>
+					</div>
+
+					<!------ BOX CONTAINER SLIDESHOW/CAROUSEL---------->
+					<div class="card-carousel">
+						<div class="slideshow-container">  <!------ BOX CONTAINER PICTURES SLIDESHOW---------->
+							<div class="mySlides">
+								<img src="https://res.cloudinary.com/drpcjt13x/image/upload/v1602000627/Proyectos/Product%20Landing%20Page/paris1_jlpr5o.jpg" alt="Paris">
+								<a href="#paris">Paris</a>
+							</div>
+							<div class="mySlides">
+								<img src="https://res.cloudinary.com/drpcjt13x/image/upload/v1602000626/Proyectos/Product%20Landing%20Page/geneve_lhukez.jpg" alt="Geneve">
+								<a href="#geneve">Geneve</a>
+							</div>
+							<div class="mySlides">
+								<img src="https://res.cloudinary.com/drpcjt13x/image/upload/v1602000626/Proyectos/Product%20Landing%20Page/florence_idnekh.jpg" alt="Florence">
+								<a href="#florence">Florence</a>
+							</div>
+							<div class="mySlides">
+								<img src="https://res.cloudinary.com/drpcjt13x/image/upload/v1602000626/Proyectos/Product%20Landing%20Page/Athenas_ohyuug.jpg" alt="Athenas">
+								<a href="#athenas">Athenas</a>
+							</div>
+							<div class="mySlides">
+								<img src="https://res.cloudinary.com/drpcjt13x/image/upload/v1602000626/Proyectos/Product%20Landing%20Page/Amsterdam1_bbpv7f.jpg" alt="Amstedam">
+								<a href="#amstedam">Amsterdam</a>
+							</div>
+							<!------ BUTTONS PREV/NEXT FOR SLIDER ---------->
+							<button class="prev" onclick="plusSlides(-1)">&#10094;</button>
+							<button class="next" onclick="plusSlides(1)">&#10095;</button>
+						</div>
+						<!------ DOTS CONTAINER FOR SLIDER ---------->
+						<div class="dot-container" style="text-align:center">
+							<span class="dot" onclick="currentSlide(1)"></span> 
+							<span class="dot" onclick="currentSlide(2)"></span> 
+							<span class="dot" onclick="currentSlide(3)"></span> 
+							<span class="dot" onclick="currentSlide(4)"></span>
+							<span class="dot" onclick="currentSlide(5)"></span>
+						</div>
+					</div>
+
+				</div>		
+			</div>
+		</section>
+		
+		<!--------------------------------------------- SOCIAL/NEWSLETTER SECTION  ------------------------------------->
+		<section id="social">
+			
+			<div class="social-wrapper"> <!------ MAIN CONTAINER FOR PICTURE ---------->
+
+				<div class="social-top">  <!------ CONTAINER TOP FOR TEXT ---------->
+					<div class="social-text">
+						<h3>Explore the world with us</h3>
+						<p>Sign up for our newsletter and we'll send you the best, most inspiring offers each week.</p>
+						<form action="" id="subscribe">
+							<input type="email" name="email" id="" placeholder="Email address">
+							<button type="submit">Subscribe</button>
+						</form>
+						
+						<p>By submitting your email, you consent to receiving automatically-created and personalised communications including deals and offers about our and our selected partners products and services (we do not share your data collected here with these partners). For more info, or if you want to unsubscribe, check our <span style="text-decoration: underline;">Privacy Policy</span> (or you can unsubscribe by clicking the link in our emails).</p>
+					</div>
+				</div>
+
+				<div class="social-bottom">  <!------ CONTAINER BOTTOM FOR SOCIAL ICONS ---------->
+					<p>Connect with us </p>
+					<div class="social-icons">
+						<i class="fab fa-facebook"></i>
+						<i class="fab fa-instagram"></i>
+						<i class="fab fa-youtube"></i>
+						<i class="fab fa-twitter"></i>
+						<i class="fab fa-pinterest"></i>
+					</div>
+				</div>
+
+			</div>
+
+		</section>
+
+		<!--------------------------------------------- INDEX SECTION  -------------------------------------------->
+		<section id="index">
+			<div class="index-wrapper">
+
+				<div class="index-row">
+
+					<!------ SMALL BOX CONTAINER---------->
+					<div class="index-column">
+						<h4>Explore</h4>
+						<ul>
+							<li><a href="#">Airports</a></li>
+							<li><a href="#">Flights</a></li>
+							<li><a href="#">Hotels</a></li>
+							<li><a href="#">Car Hire</a></li>
+							<li><a href="#">Travel guides</a></li>
+							<li><a href="#">City Breaks</a></li>
+						</ul>
+					</div>
+
+					<!------ SMALL BOX CONTAINER---------->
+					<div class="index-column">
+						<h4>Partners</h4>
+						<ul>
+							<li><a href="#">Advertise with us</a></li>
+							<li><a href="#">Affiliates</a></li>
+							<li><a href="#">Travel insight</a></li>
+						</ul>
+					</div>
+
+					<!------ SMALL BOX CONTAINER---------->
+					<div class="index-column">
+						<h4>About us</h4>
+						<ul>
+							<li><a href="#">Company information</a></li>
+							<li><a href="#">Our team</a></li>
+							<li><a href="#">Registered address</a></li>
+							<li><a href="#">Careers</a></li>
+						</ul>
+					</div>
+
+					<!------ SMALL BOX CONTAINER---------->
+					<div class="index-column">
+						<h4>Help</h4>
+						<ul>
+							<li><a href="#">Cookies policy</a></li>
+							<li><a href="#">Fees and charges</a></li>
+							<li><a href="#">Privacy policy</a></li>
+						</ul>
+					</div>
+
+				</div>
+
+			</div>
+		</section>
+
+	</main>			
+
+	<!-------------------------------------------------  FOOTER  ------------------------------------------------------>		
+	<footer>
+		<div id="footer-div">
+			<p>&copy; 2019 GuaciG &bull; <a href="https://guacig.github.io/" target="_blank">Portfolio</a></p>		
+		</div>			
+	</footer>
+	
+</body>
+</html>
