@@ -4,7 +4,7 @@ An example of single page for a travel agency or airline.
 
 I wanted to test some functionalities such as registration and login buttons, scroll button to the top or slideshow with images.
 
-It was made with HTML, CSS and javaScript and it came to me as an idea from the Product landing page challenge of freeCodeCamp. 
+It was made with HTML, CSS and javaScript and came to me as an idea from the Product landing page challenge of freeCodeCamp. 
 
 
 ![Travel Landing Page](https://res.cloudinary.com/drpcjt13x/image/upload/v1603025561/Proyectos/Product%20Landing%20Page/Landing_Page_Travel_Agency_odfiev.png "Travel Landing Page")
