@@ -1,4 +1,4 @@
-# Travel Landing Page - Personal project.
+# Travel Single Page - Personal project.
 
 It was an example of travel agency or flight search engine website.
 
