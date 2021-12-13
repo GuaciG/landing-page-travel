@@ -945,7 +945,8 @@ h2 {
   color: transparent;
   cursor: pointer;
   background: transparent;
-  height: 50px;
+  width: 70px;
+  height: 70px;
   left: 0;
   top: 50%;
   border: none;
@@ -957,7 +958,8 @@ h2 {
 }
 
 .slick-prev {
-  left: -35px;
+  left: -50px;
+  top: 40%;
 }
 
 .slick-prev::before {
@@ -968,9 +970,10 @@ h2 {
   border: none;
   padding: 5px 12px;
   border-radius: 4px;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .slick-next {
@@ -978,7 +981,8 @@ h2 {
   color: transparent;
   cursor: pointer;
   background: transparent;
-  height: 50px;
+  width: 70px;
+  height: 70px;
   top: 50%;
   right: 0;
   border: none;
@@ -990,7 +994,8 @@ h2 {
 }
 
 .slick-next {
-  right: -59px;
+  right: -50px;
+  top: 40%;
 }
 
 .slick-next::before {
@@ -1001,9 +1006,10 @@ h2 {
   border: none;
   padding: 5px 12px;
   border-radius: 4px;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .slick-prev.hidden,
@@ -1225,7 +1231,8 @@ h2 {
 }
 
 .slide-container .slick-prev {
-  left: -25px;
+  top: 40%;
+  left: -10%;
   z-index: 9;
 }
 
@@ -1236,7 +1243,8 @@ h2 {
 }
 
 .slide-container .slick-next {
-  right: -49px;
+  top: 40%;
+  right: -10%;
 }
 
 /* -- Covid-19 map restrictions ---*/
