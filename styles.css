@@ -945,6 +945,7 @@ h2 {
   color: transparent;
   cursor: pointer;
   background: transparent;
+  height: 50px;
   left: 0;
   top: 50%;
   border: none;
@@ -977,6 +978,7 @@ h2 {
   color: transparent;
   cursor: pointer;
   background: transparent;
+  height: 50px;
   top: 50%;
   right: 0;
   border: none;
@@ -988,7 +990,7 @@ h2 {
 }
 
 .slick-next {
-  right: -65px;
+  right: -59px;
 }
 
 .slick-next::before {
@@ -1225,7 +1227,6 @@ h2 {
 .slide-container .slick-prev {
   left: -25px;
   z-index: 9;
-  box-shadow: 0px 0px 15px rgba(124, 123, 123, 0.5);
 }
 
 .slide-container .slick-next::before {
@@ -1235,7 +1236,7 @@ h2 {
 }
 
 .slide-container .slick-next {
-  right: -8px;
+  right: -49px;
 }
 
 /* -- Covid-19 map restrictions ---*/
