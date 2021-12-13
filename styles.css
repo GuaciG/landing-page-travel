@@ -942,27 +942,21 @@ h2 {
 /* Arrows next and prev */
 .slick-prev {
   position: absolute;
-  display: block;
-  height: 20px;
-  width: 20px;
   color: transparent;
   cursor: pointer;
   background: transparent;
-  left: -5%;
+  left: 0;
   top: 50%;
-  -webkit-transform: translate(0, -50%);
-  -ms-transform: translate(0, -50%);
-  transform: translate(0, -50%);
-  padding: 0;
   border: none;
   outline: none;
+  display: block;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
 }
 
 .slick-prev {
-  left: -37px;
+  left: -35px;
 }
 
 .slick-prev::before {
@@ -980,27 +974,21 @@ h2 {
 
 .slick-next {
   position: absolute;
-  display: block;
-  height: 20px;
-  width: 20px;
   color: transparent;
   cursor: pointer;
   background: transparent;
   top: 50%;
-  right: -2%;
-  -webkit-transform: translate(0, -50%);
-  -ms-transform: translate(0, -50%);
-  transform: translate(0, -50%);
-  padding: 0;
+  right: 0;
   border: none;
   outline: none;
+  display: block;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
 }
 
 .slick-next {
-  right: -20px;
+  right: -65px;
 }
 
 .slick-next::before {
