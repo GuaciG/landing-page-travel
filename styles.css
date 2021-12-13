@@ -956,6 +956,9 @@ h2 {
   padding: 0;
   border: none;
   outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
 .slick-prev {
@@ -970,6 +973,9 @@ h2 {
   border: none;
   padding: 5px 12px;
   border-radius: 4px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
 .slick-next {
@@ -988,6 +994,9 @@ h2 {
   padding: 0;
   border: none;
   outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
 .slick-next {
@@ -1002,6 +1011,9 @@ h2 {
   border: none;
   padding: 5px 12px;
   border-radius: 4px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
 .slick-prev.hidden,
