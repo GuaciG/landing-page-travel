@@ -1,23 +1,23 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Travel Agency Website</title>
 	<link rel="icon" type="image/png" sizes="16x16" href="icon/favicon-16x16.png">
 	<link rel="stylesheet" href="styles.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
-	<script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+	<script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 </head>
 
 <body>
 
-	<!-----HEADER-------->
+	<!-- HEADER  -->
 	<header>  
-		<!--------HEADER TOP - LOGO + register and log in ------------>
+		<!-- HEADER TOP - LOGO + register and log in  -->
 		<div class="header-top">   
 			<div class="top-wrapper">
 				<div class="logo">
@@ -34,7 +34,7 @@
 				<div id="hamburger"></div>
 		  </div>	
 		</div>
-		<!-------------HEADER BOTTOM - NAVEGATION --------->
+		<!--  HEADER BOTTOM - NAVEGATION   -->
 		<nav class="navigation">	
 			<div id="menu">
 				<a href="#home">Home</a>
@@ -50,7 +50,7 @@
 			</div>
 		</nav>
 		 
-		<!------ MODAL SIGN-IN USER/REGISTER ACCOUNT -------->
+		<!--   MODAL SIGN-IN USER/REGISTER ACCOUNT   -->
 		<div id="id02" class="signModal">
 			<span class="signclose" title="Close Modal">&times;</span>
 			<!-- Modal Content -->
@@ -60,13 +60,13 @@
 					<p>Please fill in this form to create an account.</p>
 					<hr>
 					<label for="email"><b>Email</b></label>
-					<input type="text" placeholder="Enter Email" name="email" required>
+					<input type="text" id="email" placeholder="Enter Email" name="email" required>
 		  
 					<label for="signpsw"><b>Password</b></label>
-					<input type="password" placeholder="Enter Password" name="signpsw" required>
+					<input type="password" id="signpsw" placeholder="Enter Password" name="signpsw" required>
 		  
 					<label for="psw-repeat"><b>Repeat Password</b></label>
-					<input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+					<input type="password" id="psw-repeat" placeholder="Repeat Password" name="psw-repeat" required>
 				
 					<label>
 				  <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
@@ -82,7 +82,7 @@
 			</form>
 		</div>
 		
-		<!---------- MODAL LOG-IN USER/ACCOUNT ------------->
+		<!--  MODAL LOG-IN USER/ACCOUNT  -->
 		<div id="id01" class="modal">
 			<span class="close" title="Close Modal">&times;</span>
 		
@@ -90,10 +90,10 @@
 			<form class="modal-content animate">
 				<div class="container-modal">
 					<label for="uname"><b>Username</b></label>
-					<input type="text" placeholder="Enter Username" name="uname" required>
+					<input type="text" id="uname" placeholder="Enter Username" name="uname" required>
 			
 					<label for="psw"><b>Password</b></label>
-					<input type="password" placeholder="Enter Password" name="psw" required>
+					<input type="password" id="psw" placeholder="Enter Password" name="psw" required>
 			
 					<button type="submit">Login</button>
 
@@ -110,18 +110,18 @@
 		</div>	
 	</header>
 
-	<!----- BUTTON SCROLL TO TOP ------->
+	<!--   BUTTON SCROLL TO TOP  -->
 	<button class="scrollBtn" id="myBtnScr" title="Go to top">&uarr;</button>
 
 
-	<!-----------  MAIN  ----------->
+	<!--   MAIN   -->
 	<main id="home">
-		<!------ CONTAINER FOR HERO-IMAGE + FLIGHTS SEARCHER ------->
+		<!--  CONTAINER FOR HERO-IMAGE + FLIGHTS SEARCHER  -->
 		<div class="hero-wrapper">  
 			<div class="content-wrapper">
-				<!---- FLIGHTS SEARCHER ------>
+				<!-- FLIGHTS SEARCHER  -->
 				<div class="container-searcher">  
-					<!---- TAPS FOR SEARCHER ------->  
+					<!--  TAPS FOR SEARCHER  -->  
 					<div class="navigation-primary">   
 						<div class="tabs">
 							<a href="#flights" class="active" title="flights"><i class="fas fa-plane"></i>Flights</a>
@@ -129,9 +129,9 @@
 							<a href="#cars" title="cars"><i class="fas fa-car"></i>Cars</a>
 						</div>	
 					</div>	
-					<!----- SEARCHER ------->	
+					<!--  SEARCHER  -->	
 					<div class="navigation-secondary">   
-						<form class="search-flight" action="">
+						<form class="search-flight" action="#">
 							<div class="radio-buttons">
 								<input class="one-way-radio" id="one-way" type="radio" value="one way" name="travel">
 								<label for="one-way" class="one-way-label">One way</label>
@@ -170,7 +170,7 @@
 
 							<div class="passenger-searcher">
 								<div class="adults-wrapper">
-									<label class="passenger-type" for="Adults">Adults (+16)</label>
+									<label class="passenger-type" for="adults">Adults (+16)</label>
 									<div class="passenger-selector">
 										<button class="button-remove" type="button"><i class="fas fa-minus"></i></button>
 										<input type="text" value="0" class="quantity" id="adults">
@@ -178,7 +178,7 @@
 									</div>
 								</div>
 								<div class="children-wrapper">
-									<label class="passenger-type" for="Children">Children (2-15)</label>
+									<label class="passenger-type" for="children">Children (2-15)</label>
 									<div class="passenger-selector">
 										<button class="button-remove" type="button"><i class="fas fa-minus"></i></button>
 										<input type="text" value="0" class="quantity" id="children">
@@ -186,10 +186,10 @@
 									</div>
 								</div>
 								<div class="infants-wrapper">
-									<label class="passenger-type" for="Infants">Infants (0-2)</label>
+									<label class="passenger-type" for="infants">Infants (0-2)</label>
 									<div class="passenger-selector">
 										<button class="button-remove" type="button"><i class="fas fa-minus"></i></button>
-										<input type="text" value="0" class="quantity" id="infant">
+										<input type="text" value="0" class="quantity" id="infants">
 										<button class="button-add" type="button"><i class="fas fa-plus"></i></button>
 									</div>
 								</div>
@@ -203,14 +203,14 @@
 			</div>		
 		</div>
 
-		<!-------  FEATURES SECTION  ------->		
+		<!--  FEATURES SECTION  -->		
 		<section id="features">
 			<div class="features-container">
 				<div class="wrapper">
 					<h2>Travel with confidence</h2>
 	
 					<div class="row-container">
-						<!------ SMALL BOX CONTAINER---------->
+						<!-- SMALL BOX CONTAINER  -->
 						<div class="feature-card">  
 							<img src="https://res.cloudinary.com/drpcjt13x/image/upload/v1601989556/Proyectos/Product%20Landing%20Page/organized_zgxidj.jpg" alt="travel organized">
 							<div class="card-text">
@@ -220,7 +220,7 @@
 							</div>
 						</div>
 	
-						<!------ SMALL BOX CONTAINER---------->
+						<!-- SMALL BOX CONTAINER  -->
 						<div class="feature-card">  
 							<img src="https://res.cloudinary.com/drpcjt13x/image/upload/v1601989556/Proyectos/Product%20Landing%20Page/woman_casgc7.jpg" alt="morning woman">
 							<div class="card-text">
@@ -229,7 +229,7 @@
 							</div>
 						</div>
 	
-						<!------ SMALL BOX CONTAINER---------->
+						<!-- SMALL BOX CONTAINER  -->
 						<div class="feature-card">
 							<img src="https://res.cloudinary.com/drpcjt13x/image/upload/v1601989556/Proyectos/Product%20Landing%20Page/travel-couple_ra8x1o.jpg" alt="couple travelling">
 							<div class="card-text">	
@@ -284,7 +284,7 @@
 			</div>	
 		</section>		
 
-		<!------  RECOMMENDATION SECTION  --------->		
+		<!--  RECOMMENDATION SECTION  -->		
 		<section id="recommendations">
 			<div class="recommendations-container">
 				<div class="wrapper">
@@ -292,7 +292,7 @@
 					<!-- Slick slider -->
 					<div class="recommendation-row">
 						<div class="recommendation-slide-container">
-							<!------ SMALL BOX CONTAINER---------->
+							<!-- SMALL BOX CONTAINER  -->
 							<div class="recommendation-box">
 								<img src="https://res.cloudinary.com/drpcjt13x/image/upload/v1575463543/Proyectos/Product%20Landing%20Page/Caribean_beach_ohkgcs.jpg" alt="Caribean beach">
 								<div class="box-text">
@@ -302,7 +302,7 @@
 								<button class="btn">More info</button>	
 							</div>
 		
-							<!------ SMALL BOX CONTAINER---------->
+							<!-- SMALL BOX CONTAINER  -->
 							<div class="recommendation-box">
 								<img src="https://res.cloudinary.com/drpcjt13x/image/upload/v1575463309/Proyectos/Product%20Landing%20Page/Dubai-boat_dy52cv.jpg" alt="Dubai City">
 								<div class="box-text">
@@ -312,7 +312,7 @@
 								<button class="btn">More info</button>
 							</div>
 		
-							<!------ SMALL BOX CONTAINER---------->
+							<!-- SMALL BOX CONTAINER  -->
 							<div class="recommendation-box">
 								<img src="https://res.cloudinary.com/drpcjt13x/image/upload/v1575463541/Proyectos/Product%20Landing%20Page/alpes_girl_nfii1w.jpg" alt="girl at the lake">	
 								<div class="box-text">
@@ -322,18 +322,18 @@
 								<button class="btn">More info</button>
 							</div>
 		
-							<!------ SMALL BOX CONTAINER---------->
+							<!-- SMALL BOX CONTAINER  -->
 							<div class="recommendation-box">
-								<img src="https://res.cloudinary.com/drpcjt13x/image/upload/v1601994046/Proyectos/Product%20Landing%20Page/nepal_tsh3ij.jpg" alt="temple">	
+								<img src="https://res.cloudinary.com/drpcjt13x/image/upload/v1601994046/Proyectos/Product%20Landing%20Page/nepal_tsh3ij.jpg" alt="Nepali temple">	
 								<div class="box-text">
 									<h4 class="travel-heading">Cultural</h4>
 									<p class="travel-price">from £200.00 p/p</p>
 								</div>
 								<button>More info</button>
 							</div>
-							<!------ SMALL BOX CONTAINER---------->
+							<!-- SMALL BOX CONTAINER  -->
 							<div class="recommendation-box">
-								<img src="https://res.cloudinary.com/drpcjt13x/image/upload/v1638379439/Proyectos/Product%20Landing%20Page/wellness_e8bwdx.jpg">	
+								<img src="https://res.cloudinary.com/drpcjt13x/image/upload/v1638379439/Proyectos/Product%20Landing%20Page/wellness_e8bwdx.jpg" alt="woman relaxing in a pool">	
 								<div class="box-text">
 									<h4 class="travel-heading">Spa</h4>
 									<p class="travel-price">from £200.00 p/p</p>
@@ -341,18 +341,18 @@
 								<button class="btn">More info</button>
 							</div>
 		
-							<!------ SMALL BOX CONTAINER---------->
+							<!-- SMALL BOX CONTAINER  -->
 							<div class="recommendation-box">
-								<img src="https://res.cloudinary.com/drpcjt13x/image/upload/v1638379440/Proyectos/Product%20Landing%20Page/family_yyywed.jpg" alt="temple">	
+								<img src="https://res.cloudinary.com/drpcjt13x/image/upload/v1638379440/Proyectos/Product%20Landing%20Page/family_yyywed.jpg" alt="A man, a woman and a boy watching a map">	
 								<div class="box-text">
 									<h4 class="travel-heading">Family</h4>
 									<p class="travel-price">from £200.00 p/p</p>
 								</div>
 								<button>More info</button>
 							</div>
-							<!------ SMALL BOX CONTAINER---------->
+							<!-- SMALL BOX CONTAINER  -->
 							<div class="recommendation-box">
-								<img src="https://res.cloudinary.com/drpcjt13x/image/upload/v1638379440/Proyectos/Product%20Landing%20Page/safari_cbyz5s.jpg" alt="temple">	
+								<img src="https://res.cloudinary.com/drpcjt13x/image/upload/v1638379440/Proyectos/Product%20Landing%20Page/safari_cbyz5s.jpg" alt="A woman taking pictures to elephants in Africa">	
 								<div class="box-text">
 									<h4 class="travel-heading">Safari</h4>
 									<p class="travel-price">from £200.00 p/p</p>
@@ -365,13 +365,13 @@
 			</div>	
 		</section>
 
-		<!-----  NEW ROUTES SECTION ------------>			
+		<!-- NEW ROUTES SECTION -->			
 		<section id="new-routes">
 			<div class="routes-container">
 				<div class="wrapper">
 					<h2>Amazing new destinations are waiting for you</h2>
 					<div class="routes-row">
-						<!------ BOX CONTAINER---------->
+						<!-- BOX CONTAINER  -->
 						<div class="routes-box">	
 							<h4 class="routes-heading">Explore without limits</h4>
 							<p class="routes-text">Get to know our new destinations around the world where you can enjoy offers and surprising new routes.</p>
@@ -382,13 +382,13 @@
 			</div>	
 		</section>
 
-		<!------ TOP DESTINES SECTION ----------->				
+		<!-- TOP DESTINES SECTION -->				
 		<section id="top-destines">
 			<div class="destines-container">
 				<div class="wrapper">
 					<h2>Top destines</h2>
 					<div class="destines-row">
-						<!------ BOX CONTAINER---------->
+						<!-- BOX CONTAINER  -->
 						<div class="destines-card Picture">
 							<img src="https://res.cloudinary.com/drpcjt13x/image/upload/v1602000626/Proyectos/Product%20Landing%20Page/london1_whlodi.jpg" alt="London">
 							<div class="destines-text">
@@ -398,7 +398,7 @@
 							<a href="#">Find hotel deals &#10095;</a>
 						</div>
 	
-						<!------ BOX CONTAINER---------->
+						<!-- BOX CONTAINER  -->
 						<div class="destines-card Picture">
 							<img src="https://res.cloudinary.com/drpcjt13x/image/upload/v1602000627/Proyectos/Product%20Landing%20Page/Barcelona1_vfq3fz.jpg" alt="Barcelona">
 							<div class="destines-text">
@@ -408,9 +408,9 @@
 							<a href="#">Learn more &#10095;</a>
 						</div>
 	
-						<!------ BOX CONTAINER CAROUSEL---------->
+						<!-- BOX CONTAINER CAROUSEL -->
 						<div class="destines-card-carousel">
-							<!------ BOX CONTAINER PICTURES CAROUSEL -------->
+							<!-- BOX CONTAINER PICTURES CAROUSEL -->
 							<div class="slide-container">  
 								<div class="mySlides">
 									<img src="https://res.cloudinary.com/drpcjt13x/image/upload/v1602000627/Proyectos/Product%20Landing%20Page/paris1_jlpr5o.jpg" alt="Paris">
@@ -437,7 +437,7 @@
 					</div>
 					<div class="covid-row">
 						<div class="covid-text">
-							<h1>Where to fly during COVID-19?</h1>
+							<h2>Where to fly during COVID-19?</h2>
 							<p>Need to know where you can catch that flight to? Get the latest quarantine info, navigate entry restrictions and quarantine requirements, and sign up to get updates when they change.</p>
 							<div class="covid-buttons">
 								<a href="#">View live map</a>
@@ -460,18 +460,18 @@
 			</div>	
 		</section>
 		
-		<!----- SOCIAL/NEWSLETTER SECTION ----------->
+		<!-- SOCIAL/NEWSLETTER SECTION -->
 		<section id="newsletter">
 			<div class="newsletter-container">
-				<!------ MAIN CONTAINER FOR PICTURE ---------->
+				<!-- MAIN CONTAINER FOR PICTURE -->
 				<div class="newsletter-wrapper"> 
-					<!------ CONTAINER TOP FOR TEXT ---------->
+					<!-- CONTAINER TOP FOR TEXT -->
 					<div class="social-top">  
 						<div class="social-text">
 							<h3>Explore the world with us</h3>
 							<p>Sign up for our newsletter and we'll send you the best, most inspiring offers each week.</p>
-							<form action="" class="subscribe">
-								<input type="email" name="email" id="" placeholder="Email address">
+							<form action="#" class="subscribe">
+								<input type="email" name="email" placeholder="Email address">
 								<button type="submit">Subscribe</button>
 							</form>
 							
@@ -479,7 +479,7 @@
 							</p>
 						</div>
 					</div>
-					<!---- CONTAINER BOTTOM FOR SOCIAL ICONS ---->
+					<!-- CONTAINER BOTTOM FOR SOCIAL ICONS -->
 					<div class="social-bottom">  
 						<p>Connect with us </p>
 						<div class="social-icons">
@@ -494,14 +494,14 @@
 			</div>
 		</section>
 
-		<!------ INDEX SECTION ---------->
+		<!-- INDEX SECTION -->
 		<section id="index">
 			<div class="index-container">
 				<div class="index-wrapper">
 	
 					<div class="index-row">
 	
-						<!------ SMALL BOX CONTAINER---------->
+						<!-- SMALL BOX CONTAINER -->
 						<div class="index-column">
 							<h4>Explore</h4>
 							<ul>
@@ -514,7 +514,7 @@
 							</ul>
 						</div>
 	
-						<!------ SMALL BOX CONTAINER---------->
+						<!-- SMALL BOX CONTAINER -->
 						<div class="index-column">
 							<h4>Partners</h4>
 							<ul>
@@ -524,7 +524,7 @@
 							</ul>
 						</div>
 	
-						<!------ SMALL BOX CONTAINER---------->
+						<!-- SMALL BOX CONTAINER -->
 						<div class="index-column">
 							<h4>About us</h4>
 							<ul>
@@ -535,7 +535,7 @@
 							</ul>
 						</div>
 	
-						<!------ SMALL BOX CONTAINER---------->
+						<!-- SMALL BOX CONTAINER  -->
 						<div class="index-column">
 							<h4>Help</h4>
 							<ul>
@@ -551,7 +551,7 @@
 
 	</main>			
 
-	<!----- FOOTER ----->		
+	<!-- FOOTER -->		
 	<footer>
 		<div id="footer-div">
 			<p>&copy; 2020 Guaci Gutiérrez &bull; <a href="https://guacig.github.io/" target="_blank">Portfolio</a></p>		
